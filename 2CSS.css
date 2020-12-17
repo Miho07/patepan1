@@ -1,0 +1,353 @@
+
+
+.text_a { color: red; } /* 文字を赤にする。classで指定 */
+.text_b { color: blue; } /* 文字を青にする。classで指定 */
+#text_c { color: green; } /* 文字を緑にする。idで指定 */
+#text_d { color: orange; } /* 文字をオレンジにする。idで指定 */
+.text_e { font-size: 26px; } /* 文字のサイズを26にする。classで指定 */
+small { color: purple; } /* 文字を紫にする。タグで指定 */
+
+
+.font-a { font-family: sans-serif; }
+.font-b { font-family: serif; }
+.font-c { font-family: monospace; }
+.font-d { font-family: fantasy; }
+.font-e { font-family: cursive; }
+.font-f { font-family: "メイリオ"; }
+
+
+
+.text1 { text-align: left; }
+.text2 { text-align: right; }
+.text3 { text-align: center; }
+
+
+
+.parent_box1 {
+    background-color: gainsboro;
+    height: 150px;
+}
+.box1 {
+    background-color: cornflowerblue;
+    width: 300px;
+}
+.box2 {
+    background-color: crimson;
+    width: 100%;
+}
+.box3 {
+    background-color: darkorange;
+    width: auto;
+}
+
+
+
+.parent_box2 {
+    background-color: gainsboro;
+    width: 600px;
+}
+.box4 {
+    background-color: cornflowerblue;
+    width: 100%;
+}
+.box5 {
+    background-color: crimson;
+    width: 75%;
+}
+.box6 {
+    background-color: darkorange;
+    width: 50%;
+}
+.box7 {
+    background-color: mediumseagreen;
+    width: 25%;
+}
+
+
+/* 親要素 */
+.parent_box {
+    border: 1px solid red;
+    width: 300px;
+}
+/* 子要素 */
+.children_box {
+    width: 600px;
+}
+
+
+.box8 {
+    background-color: mediumseagreen;
+    height: 25px;
+}
+.box9 {
+    background-color: crimson;
+    height: 50px;
+}
+.box10 {
+    background-color: palevioletred;
+    height: 100px;
+}
+
+.box11 {
+    background-color: mediumseagreen;
+    width: 200px;
+    height: 100px;
+}
+
+
+
+.box12 {
+    background-color: mediumseagreen;
+    width: 200px;
+    height: auto;
+}
+
+.parent2 {
+    background-color: darkorange;
+    width: 100%;
+    height: 200px;
+}
+.parent3 {
+    background-color: darkorange;
+    width: 100%;
+}
+.children5 {
+    background-color: lightyellow;
+    width: 50%;
+    height: 50%;
+}
+.children6 {
+    background-color: lightyellow;
+    width: 50%;
+    height: 50%;
+}
+
+.box > li { 
+    display: inline-block;
+    background-color: pink;
+}
+.line_box {
+    border: 1px solid black;
+}
+.line_boxA {
+    border: 1px solid black;
+    padding-top: 30px;
+}
+.line_boxB {
+    border: 1px solid black;
+    padding-bottom: 30px;
+}
+.line_boxC {
+    border: 1px solid black;
+    padding-left: 30px;
+}
+.line_boxD {
+    border: 1px solid black;
+    padding-right: 30px;
+}
+.line_boxE {
+    border: 1px solid black;
+    padding: 30px;
+}
+
+.line_sample {
+    background-color: skyblue;
+    border: 1px solid black;
+}
+
+.line_sample {
+    background-color: skyblue;
+    border: 1px solid black;
+}
+.line_c { 
+    padding: 20px 0 20px 0;
+}
+.line_d { 
+    margin: 20px 0 20px 0;
+    padding: 20px;
+}
+.line_e { 
+    padding: 20px 0 0 20px;
+}
+
+.border1 {
+     width: 100px;
+     border: 5px solid black;
+}
+.border2 {
+     width: 200px;
+     border: 5px double red;
+}
+.border3 {
+     width: 300px;
+     border: 5px dashed pink;
+}
+.border4 {
+     width: 400px;
+     border: 5px ridge blue;
+}
+.border5 { 
+    width: 100%;
+    border: 5px groove green;
+}
+
+.border6 {
+     border-top: 5px solid black;
+}
+.border7 {
+     border-bottom: 5px double red;
+}
+.border8 {
+     border-right: 5px dashed pink;
+}
+.border9 {
+     border-left: 5px ridge blue;
+}
+.border10 { 
+    border-top: 5px groove green;
+    border-bottom: 5px groove red;
+}
+
+
+<! -練習問題1
+
+線の太さ 5px
+
+線の表示の位置　上下左右全て
+
+線の種類 二重線
+
+線の色 black -!/>
+
+
+
+.test_border1 {
+     border: 5px double black;
+}
+
+
+.test_border1 { border: 5px double black; }
+
+線の太さ 3px
+
+線の表示の位置　上のみ
+
+線の種類 点線
+
+線の色 red
+
+
+
+.test_border2 { border-top: 3px dotted red; }
+
+.test_border2 { border-top: 3px double red; }
+
+
+線の太さ （上）2px（右）5px
+線の表示の位置　上と右
+線の種類 （上）点線（右）破線
+線の色 （上）#800080（右）#fa8072
+
+
+#test_border3 {
+    border-top: 2px dashed #800080;
+    border-right: 5px solid #fa8072;
+}
+
+
+.test_border4 { 
+    border-top: 2px solid black;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+}
+
+
+
+
+
+.picture_area {
+    position: relative; /* ここで基準となる要素を決定 */
+    width: 100%;
+    height: 400px;
+    border: 5px solid pink;
+}
+.star_img {
+    width: 100%;
+    height: 400px;
+} 
+.star_a {
+    position: absolute; /* ここで基準となる要素の位置を指定 */
+    top: 0px; /* 表示位置を記載 */
+    left: 0px; /* 表示位置を記載 */
+    color: white;
+    border: 3px solid white;
+}
+.star_b {
+    position: absolute; /* ここで基準となる要素の位置を指定 */
+    top: 200px; /* 表示位置を記載 */
+    right: 350px; /* 表示位置を記載 */
+    color: white;
+    border: 3px solid white;
+}
+.star_c {
+    position: absolute; /* ここで基準となる要素の位置を指定 */
+    bottom: 50px; /* 表示位置を記載 */
+    color: white;
+    border: 3px solid white;
+}
+.outside {
+    color: black;
+}
+
+.box { 
+    width: 200px;
+    padding: 15px;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+.no_float1 {
+    background-color: pink;
+}
+.no_float2 {
+    background-color: skyblue;
+}
+.left1 {
+    background-color: pink;
+    float: left
+}
+.left2 {
+    background-color: skyblue;
+    float: left
+}
+.right1 {
+    background-color: pink;
+    float: right;
+}
+.right2 {
+    background-color: skyblue;
+    float: right;
+}
+.right3 {
+    background-color: orange;
+    float: right;
+}
+.clear { clear: both; }
+
+.box_b { 
+    width: 1000px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.left_a {
+    background-color: pink;
+    width: 150px;
+    height: 150px;
+    float: left
+}
+.left_b {
+    background-color: skyblue;
+    width: 300px;
+    height: 300px;
+    float: left
+}
+
